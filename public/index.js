@@ -7,14 +7,14 @@ previewBtn.addEventListener('click', () => {
     
     if(ssid !== '' && password !== ''){
         console.log(ssid+'->'+password);
-
+        var temp = "WIFI:T:WPA;S:"+ssid+";P:"+password+";";
         var v = new QRCode(document.getElementById("qr-code"), {
-            text: password,
+            text: temp,
             width: 128,
             height: 128
         });
-        
-
+        document.getElementById('network').innerText = ssid;
+        document.getElementById('pass').innerText = password;
     }
 });
 

@@ -16,10 +16,11 @@
                 <input type="text" placeholder="SSID" class="input-box" id="ssid"/><br/>
                 <input type="text" placeholder="Password" class="input-box" id="password"/>
                 <input type="button" value="Preview" id="btn1">
+                <input type="button" value="Print" id="btn2" onclick="printDiv()">
             </div>
         </div>
         <div class="right-container">
-            <div class="preview-box">
+            <div class="preview-box" id="pb">
                 <img src="./img/wifi.png" width="50" height="50"/><br>
                 <div id="qr-code-outer">
                     <div id="qr-code">
@@ -27,14 +28,19 @@
                     </div>
                 </div>
                 <p class="preview-text">NETWORK</p>
-                <p class="preview-text">Network_Name</p>
+                <p class="preview-text" id="network" style="text-decoration: underline;">Network_Name</p>
                 <p class="preview-text">PASSWORD</p>
-                <p class="preview-text">Wifi_Password</p>
+                <p class="preview-text" id="pass" style="text-decoration: underline;">Wifi_Password</p>
             </div>
         </div>
     </div>
     <script src="./qrcode.min.js" type="text/javascript"></script>
     <script src="./index.js" type="text/javascript"></script>
+    <script>
+    function printDiv() { 
+            
+        } 
+    </script>
 </body>
 
 </html>

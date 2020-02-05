@@ -56,7 +56,7 @@ html, body{
     letter-spacing: 1px;
 }
 
-#btn1{
+#btn1, #btn2{
     margin-top: 10px;
     width: 100%;
     height: 40px;
@@ -92,4 +92,16 @@ html, body{
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .outer-container{
+        flex-direction: column;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
+    }
 }
